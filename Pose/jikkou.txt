@@ -1,0 +1,26 @@
+Mac
+
+/Users/shuya/tf-pose-estimationに移動
+
+python run_video2.py --model=mobilenet_thin --resize=432x368 --video=douga/45353.mp4
+
+または
+
+python run_video2_fileout.py --model=mobilenet_thin --resize=432x368 --video=douga/45353.mp4
+
+Windows
+
+コマンドプロンプトで
+CのOPENポーズにCD
+
+もしくは
+C:\Users\shuya\OneDrive - 芝浦工業大学 教研テナント (SIC)\hosaka\openpose-1.7.0-binaries-win64-gpu-python3.7-flir-3d_recommended\openpose
+にCD
+
+bin\OpenPoseDemo.exe --video ..\..\sozai\videos\cl\ファイル名 --write_json ..\out_json\ファイル名
+bin\OpenPoseDemo.exe --video ..\..\sozai\videos\cl\11101\merged_11101.mp4 --write_json ..\out_json\11101
+bin\OpenPoseDemo.exe --video ..\..\videos\cl\ファイル名.mp4 --write_json ..\out_json\ファイル名 
+
+
+cd ..\
+してからjson2csv実行
